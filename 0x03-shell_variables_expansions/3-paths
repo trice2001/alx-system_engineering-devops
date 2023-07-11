@@ -1,2 +1,2 @@
 #!/bin/bash
-num_dirs=${#path_dirs[@]}
+echo $((`echo $PATH | grep -o ":/" | wc -l`+ 1))
